@@ -6,7 +6,6 @@ const Footer = () => {
     <footer className="footer-custom mt-5">
       <Container>
         <Row>
-          {/* Informazioni sul sito */}
           <Col
             md={4}
             className="mb-3mb-3 col-md-3 d-flex flex-column align-items-center"
@@ -18,7 +17,6 @@ const Footer = () => {
             </p>
           </Col>
 
-          {/* Collegamenti Utili */}
           <Col
             md={4}
             className="mb-3 mb-3 col-md-3 d-flex flex-column align-items-center"
@@ -37,7 +35,6 @@ const Footer = () => {
             </ul>
           </Col>
 
-          {/* Social Media */}
           <Col
             md={4}
             className="mb-3 mb-3 col-md-3 d-flex flex-column align-items-center"
