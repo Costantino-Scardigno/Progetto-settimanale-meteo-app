@@ -1,0 +1,59 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  height: 200vh;
+  width: 100vw;
+}
+
+.bg-navbar {
+  backdrop-filter: blur(10px);
+  background: rgba(222, 226, 226, 0.062);
+}
+
+/* CardDetail*/
+.card-custom {
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.card-custom .card-title {
+  font-weight: bold;
+}
+
+.card-custom .card-body {
+  font-size: 2rem;
+}
+
+.card-custom .card-text {
+  margin-bottom: 10px;
+}
+
+.card-custom img {
+  border-radius: 10px;
+  max-width: 150px;
+}
+
+.card-custom .button-custom {
+  background-color: #0069d9;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.card-custom .button-custom:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
+
+.card-custom .card-footer {
+  font-size: 14px;
+  text-align: center;
+}
