@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Card, Container, Row, Col } from "react-bootstrap";
+import { Card, Container, Row, Col, Alert } from "react-bootstrap";
 import { useLocation } from "react-router-dom";
 
 const GetWeather = () => {
@@ -36,18 +36,25 @@ const GetWeather = () => {
   }, [result]);
 
   if (!currentWeather || forecast.length === 0) {
-    return <p>Caricamento...</p>;
+    return <Alert variant="danger">Errore nella chiamata</Alert>;
   }
 
   return (
     <Container className="mt-5">
       {/* Meteo Corrente */}
       <Card className="card-custom">
+        <Card.Img
+          variant="top"
+          src={`http://openweathermap.org/img/wn/${currentWeather.weather[0].icon}.png`} // Icona del meteo
+          alt="Weather icon"
+        />
         <Card.Body>
           <Card.Title className="display-1">
             Meteo Attuale a: {currentWeather.name}
           </Card.Title>
           <Card.Text>
+            <strong>Stato:</strong> {currentWeather.state}
+            <br />
             <strong>Temperatura:</strong> {currentWeather.main.temp}°C
             <br />
             <strong>Descrizione:</strong>{" "}
